@@ -1,0 +1,14 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-20 17:32:01
+ * @LastEditTime: 2020-11-20 17:47:05
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angular-demo\src\app\message\message.component.html
+-->
+<div *ngIf="messageService.messages.length">
+  <h2>Messages</h2>
+  <button class="clear" (click)="messageService.clear()">clear</button>
+
+  <div *ngFor="let message of messageService.messages"> {{message}} </div>
+</div>

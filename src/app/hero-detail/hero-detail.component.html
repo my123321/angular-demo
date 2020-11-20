@@ -1,0 +1,21 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-11-20 15:23:02
+ * @LastEditTime: 2020-11-20 15:25:19
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \angular-demo\src\app\hero-detail\hero-detail.component.html
+-->
+
+<div *ngIf="hero">
+  <h2>{{hero.name | uppercase}} Detail</h2>
+  
+  <div><span>id: </span>{{hero.id}}</div>
+  <div><span>name: </span>{{hero.name}}</div>
+  
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name" />
+    </label>
+  </div>
+</div>
