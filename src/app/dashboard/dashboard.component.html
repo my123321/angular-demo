@@ -1,14 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-20 18:15:07
- * @LastEditTime: 2020-11-20 18:20:19
- * @LastEditors: your name
+ * @LastEditTime: 2020-11-30 15:47:01
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \angular-demo\src\app\dashboard\dashboard.component.html
 -->
 <h3>Top Heroes</h3>
 <div class="grid grid-pad">
-  <a *ngFor='let hero of heroes' class="col-1-4">
+  <a *ngFor='let hero of heroes' class="col-1-4" routerLink="/detail/{{ hero.id}}">
     <div class="module hero">
       <h4>{{hero.name}}</h4>
     </div>

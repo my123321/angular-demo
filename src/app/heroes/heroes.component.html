@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-11-20 11:25:51
- * @LastEditTime: 2020-11-20 15:24:35
+ * @LastEditTime: 2020-11-30 16:29:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \angular-demo\src\app\heroes\heroes.component.html
@@ -10,11 +10,13 @@
 <ul class="heroes">
   <li 
     *ngFor="let hero of heroes"
-    [class.selected] = "hero === selectedHero"
-    (click)="onSelect(hero)"
   >
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  
+    <a routerLink="/detail/{{ hero.id }}">
+      <span class="badge">{{hero.id}}</span> {{hero.name}}
+    </a>
+
   </li>
 </ul>
 
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!-- <app-hero-detail [hero]="hero"></app-hero-detail> -->

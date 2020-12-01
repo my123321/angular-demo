@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-11-20 18:15:07
- * @LastEditTime: 2020-11-20 18:25:28
+ * @LastEditTime: 2020-11-30 17:11:22
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \angular-demo\src\app\dashboard\dashboard.component.ts
@@ -9,7 +9,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Hero } from '@app/hero'
-import { HeroService } from '@app/hero.service'
+import { HeroService } from '@app/service/hero.service'
 
 @Component({
   selector: 'app-dashboard',
